@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+
+/* ? ColorPallete */
+/* https://colorhunt.co/palette/635985443c6839305318122b */
+/* https://medium.com/design-bootcamp/alternative-colors-for-pure-white-in-ui-ux-design-f861ab5a33d7 */
+
+:root {
+    --text-color-ghostwhite: #F8F8FF;
+    --text-color-paleyellow: #F7E987;
+    --background-color-1: #B9B4C7;
+    --background-color-2: #635985;
+    --background-color-3: #5C5470;
+    --background-color-4: #443C68;
+    --background-color-5: #393053;
+    --background-color-6: #18122B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Onest', sans-serif;
+    color: var(--text-color-ghostwhite);
+}
+
+/* * GLOBAL CONTAINER */
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.top-banner {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color-ghostwhite);
+    background-color: var(--background-color-4);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: 900;
+    background-color: var(--background-color-3);
+
+    i {
+        color: var(--text-color-paleyellow);
+        transition: all 0.3s ease;
+    }
+}
+
+.low-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: 900;
+    background-color: var(--background-color-2);
+}

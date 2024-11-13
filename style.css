@@ -103,15 +103,31 @@
         justify-content: center;
         align-items: center;
 
+        img {
+            filter: drop-shadow(0 0 0.75rem var(--text-color-paleyellow));
+            -webkit-filter: drop-shadow(0 0 0.75rem var(--text-color-paleyellow));
+}
+
+        h1 {
+            font-family: "Mate SC", serif;
+            font-size: 3em;
+            font-weight: 900;
+            margin: 0px 0px 8px;
+            color: var(--text-color-ghostwhite);
+            text-shadow: 1px 1px 2px var(--text-color-paleyellow), 0 0 1em var(--text-color-ghostwhite), 0 0 0.2em var(--background-color-4);
+        }
+
         .central-buttons {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 10px;
+            margin-bottom: 1rem;
 
             a {
                 font-size: 1.2em;
+                font-weight: 400;
                 padding: 10px;
                 background-color: var(--background-color-6);
                 border: thin solid var(--background-color-6);

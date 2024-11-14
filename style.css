@@ -8,6 +8,9 @@
 /* todo descargar esta imagen: https: //wall.alphacoders.com/big.php?i=244608 */
 /* https://www.letsbuildui.dev/articles/how-to-animate-borders-in-css/  REVISAR THIS PAGINA */
 
+/* ? PNG-RECOLOR TOOL */
+/* https: //onlinepngtools.com/change-png-color#examples */
+
 :root {
     --text-color-ghostwhite: #F8F8FF;
     --text-color-paleyellow: #F7E987;
@@ -104,7 +107,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(./media/az-logo.png);
+        background-image: url(./media/az-logo-purple.png);
         background-position: center;
         background-repeat: no-repeat;
         
@@ -121,7 +124,7 @@
             font-weight: 900;
             margin: 0px 0px 8px;
             color: var(--text-color-ghostwhite);
-            text-shadow: 1px 1px 2px var(--text-color-paleyellow), 0 0 1em var(--text-color-ghostwhite), 0 0 0.2em var(--background-color-4);
+            text-shadow: 2px 2px 2px var(--background-color-6), 0 0 1em var(--text-color-ghostwhite), 0 0 0.2em var(--background-color-4);
         }
 
         .central-buttons {

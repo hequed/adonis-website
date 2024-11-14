@@ -84,6 +84,7 @@
     }
 }
 
+/* * HERO SECTION CONFIGS */
 .hero {
     display: flex;
     flex-direction: column;
@@ -103,6 +104,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url(./media/az-logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        
+
 
         img {
             filter: drop-shadow(0 0 0.75rem var(--text-color-paleyellow));
@@ -174,6 +180,35 @@
                 a:hover {
                     color: var(--background-color-1);
                 }
+            }
+        }
+
+        .panel-botones {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+            a {
+                font-size: 1em;
+                margin: 5px;
+                padding: .8em 1.4em .8em;
+                color: var(--text-color-ghostwhite);
+                font-weight: 600;
+                background-color: rgba(0, 0, 0, 0);
+                background-image: linear-gradient(var(--background-color-1), var(--background-color-4));
+                border-radius: 8px;
+                box-shadow: 0 8px 6px -6px black;
+                transition: all 0.3s ease;
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                box-shadow: 0 12px 12px -10px black;
+                background-image: linear-gradient(var(--text-color-ghostwhite), var(--background-color-2));
+                /*Cambiaelgradientealpasarelratón*/
+                color: var(--text-color-ghostwhite);
             }
         }
     }

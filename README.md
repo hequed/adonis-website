@@ -39,6 +39,7 @@ Sigue nuestras redes sociales para mantenerte informado y conectado con la comun
 
 ## Powered by AzerothCore
 ![AzerothCore Logo](./media/az-logo-small.png)
+
 Este servidor está basado en **AzerothCore**, una solución **Open Source** y modular para emular **World of Warcraft**.
 
 ## ¡Únete a nuestro servidor de Discord!

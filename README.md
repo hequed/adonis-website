@@ -37,11 +37,6 @@ Sigue nuestras redes sociales para mantenerte informado y conectado con la comun
 - [TikTok](#)
 - [YouTube](#)
 
-## Powered by AzerothCore
-![AzerothCore Logo](./media/az-logo-small.png)
-
-Este servidor está basado en **AzerothCore**, una solución **Open Source** y modular para emular **World of Warcraft**.
-
 ## ¡Únete a nuestro servidor de Discord!
 ¡Haz clic en el enlace para unirte a nuestro servidor de Discord y estar al tanto de todas las noticias y actualizaciones!
 
@@ -50,3 +45,8 @@ Este servidor está basado en **AzerothCore**, una solución **Open Source** y m
 ---
 ### Información Adicional
 Para más detalles sobre cómo unirte o participar en el servidor, por favor visita nuestro [sitio web oficial](#) o contáctanos a través de nuestras redes sociales.
+
+## Powered by AzerothCore
+Este servidor está basado en **AzerothCore**, una solución **Open Source** y modular para emular **World of Warcraft**.
+
+![AzerothCore Logo](./media/az-logo-small.png)

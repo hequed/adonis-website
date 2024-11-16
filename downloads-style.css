@@ -24,28 +24,71 @@
     color: var(--text-color-ghostwhite);
 }
 
-/* General reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilo para el body */
 body {
     background-color: var(--background-color-6);
     background-image: url(./media/clouds-bg.jpg);
-    padding: 20px;
+    background-blend-mode: luminosity;
 }
 
 /* Contenedor principal */
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: var(--background-color-5);
-    padding: 20px;
-    border-radius: 8px;
+    background-color: var(--background-color-6);
+    background-image: url(./media/cloudy-bg.png);
+    background-blend-mode: luminosity;
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: thin solid var(--background-color-3);
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+.top-banner {
+    padding: 8px;
+    text-align: center;
+    color: var(--text-color-ghostwhite);
+    background: linear-gradient(180deg, rgba(24, 18, 43, 1) 0%, rgba(57, 48, 83, 1) 60%, rgba(68, 60, 104, 1) 100%);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: 900;
+    background-color: var(--background-color-6);
+
+    i {
+        color: var(--text-color-paleyellow);
+        transition: all 0.3s ease;
+    }
+}
+
+.low-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: var(--background-color-6);
+    background-image: url(./media/cloudy-bg.png);
+    background-blend-mode: luminosity;
+
+    img {
+        display: inline;
+        max-width: 30px;
+        vertical-align: middle;
+    }
 }
 
 /* Título principal */
@@ -86,4 +129,35 @@ table a {
 
 table a:hover {
     color: #45a049;
+}
+
+footer {
+    text-align: center;
+    background-color: #00000000;
+    padding-top: 68px;
+    padding-bottom: 40px;
+
+    .footer-logo-adonis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 40px;
+        padding-bottom: 140px;
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+
+        h2 {
+            text-shadow: var(--text-color-ghostwhite) 1px 0 10px;
+        }
+    }
+
+    p {
+        padding: 10px;
+        background: linear-gradient(180deg, rgba(24, 18, 43, 1) 0%, rgba(57, 48, 83, 1) 60%, rgba(68, 60, 104, 1) 100%);
+    }
+
 }

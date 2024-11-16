@@ -10,7 +10,25 @@
 </head>
 
 <body>
+    <header>
+        <div class="top-banner">
+            <p>Gracias por hacer el esfuerzo de respetar a la comunidad de <strong
+                    style="color: var(--text-color-paleyellow);">𝐀𝐃𝐎𝐍𝐈𝐒</strong>.</p>
+        </div>
 
+        <nav class="navbar">
+            <a href="./index.html"><i class='bx bxs-home'></i> INICIO</a>
+            <a href="./downloads.html"><i class='bx bxs-down-arrow-circle'></i> DESCARGAS</a>
+            <a href=""><i class='bx bx-file'></i> PREGUNTAS</a>
+            <a href=""><i class='bx bxs-data'></i> DATABASE</a>
+        </nav>
+
+        <div class="low-navbar">
+            <img src="./media/az-logo-small.png" alt="AzerothCore Logo Small">
+            <p>Powered by <strong style="color: var(--text-color-paleyellow);">AzerothCore</strong></p>
+            <p>Complete <strong>Open Source</strong> and Modular solution for MMO</p>
+        </div>
+    </header>
     <div class="container">
         <h1>Adonis Drive - Archivos para Descargar</h1>
         <table>
@@ -46,7 +64,33 @@
             </tbody>
         </table>
     </div>
+    <footer>
+        <div class="footer-logo-adonis">
+            <img src="./media/leon-logo-transparent.png" width="140px" height="140px" alt="">
+            <h2>ADONIS</h2>
+            <h2>Servidor Blizzlike & Custom PVP</h2>
+            <h3>Basado en Wrath of the Lich King</h3>
+        </div>
+    </footer>
 
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Validación de contraseñas
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (password !== confirmPassword) {
+                errorMessage.textContent = 'Las contraseñas no coinciden';
+            } else {
+                errorMessage.textContent = '';
+                alert('Cuenta creada exitosamente!');
+                // Aquí puedes agregar el código para enviar el formulario
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -95,9 +95,9 @@
     font-size: 1em;
     font-weight: 400;
     background-color: var(--background-color-3);
-        background-color: var(--background-color-6);
-            background-image: url(./media/cloudy-bg.png);
-            background-blend-mode: luminosity;
+    background-color: var(--background-color-6);
+    background-image: url(./media/cloudy-bg.png);
+    background-blend-mode: luminosity;
 
     img {
         display: inline;
@@ -579,11 +579,11 @@ footer {
         padding-top: 40px;
         padding-bottom: 40px;
 
-            background-image: url(./media/az-logo-purple.png);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-blend-mode: lighten;
+        background-image: url(./media/az-logo-purple.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
 
         h2 {
             text-shadow: var(--text-color-ghostwhite) 1px 0 10px;

@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mate+SC&family=Onest:wght@100..900&family=Orbitron:wght@400..900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Mate+SC&display=swap');
 
 /* * font-family: "Onest", sans-serif; ONEST */
 /* * font-family: "Mate SC", serif; MATE SC */
 /* * font-family: "Orbitron", sans-serif; ORBITRON */
 /* * font-family: "Major Mono Display", monospace; MAJOR MONO */
+/* * font-family: "Marcellus SC", serif; ChromieCraft Font */
 
 /* ? ColorPallete */
 /* https://colorhunt.co/palette/635985443c6839305318122b */
@@ -37,7 +39,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Mate SC", serif;
+    font-family: "Marcellus SC", serif;
     color: var(--text-color-ghostwhite);
 }
 
@@ -60,101 +62,117 @@
 .project-title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: center;
+    gap: 2px;
 
-    padding: 12px;
+    padding: 6px 0px 0px;
     background-position: center;
     background-size: cover;
+    background-image: url(./media/stars-sky.png);
     background-color: var(--background-color-6);
+    background-position: center;
+    background-size: contain;
     background-blend-mode: luminosity;
-    
-    .logo {
-        font-family: 'Playfair Display', serif;
-        font-size: 4rem;
-        color: var(--text-color-ghostwhite);
-        font-weight: 600;
-        cursor: default;
-        transition: text-shadow 0.5s ease;
-    
-        -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-        0 0 0.45em var(--glow-color);
-        -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-        0 0 0.45em var(--glow-color);
+
+    p {
         text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
-        animation: text-flicker 3s linear infinite;
+    }
+}
 
-        .glowing-txt {
-            float: left;
-            margin-right: -0.8em;
-            -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-            0 0 0.45em var(--glow-color);
-            -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-            0 0 0.45em var(--glow-color);
-            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
-            animation: text-flicker 3s linear infinite;
-          }
+.logo {
+    font-family: "Marcellus SC", serif;
+    font-size: 3.2rem;
+    color: var(--text-color-paleyellow);
+    font-weight: 600;
+    cursor: default;
+    transition: text-shadow 0.5s ease;
 
-          @keyframes text-flicker {
-            0% {
-              opacity: 0.1;
-            }
-          
-            2% {
-              opacity: 1;
-            }
-          
-            8% {
-              opacity: 0.1;
-            }
-          
-            9% {
-              opacity: 1;
-            }
-          
-            12% {
-              opacity: 0.1;
-            }
-            20% {
-              opacity: 1;
-            }
-            25% {
-              opacity: 0.3;
-            }
-            30% {
-              opacity: 1;
-            }
-          
-            70% {
-              opacity: 0.7;
-            }
-            72% {
-              opacity: 0.2;
-            }
-          
-            77% {
-              opacity: 0.9;
-            }
-            100% {
-              opacity: 0.9;
-            }
-          }
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
+    animation: text-flicker 3s linear infinite;
+}
 
-        .faulty-letter {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            color: var(--text-color-ghostwhite);
-            font-weight: 600;
-            cursor: default;
-            transition: text-shadow 0.5s ease;
-            opacity: 0.5;
-            animation: faulty-flicker 2s linear infinite;
-        }
-  }
-    
-    .logo:hover {
-        text-shadow: 0 0 5px whitesmoke;
+.logo:hover {
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
+    animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+    font-family: "Marcellus SC", serif;
+    font-size: 3.2rem;
+    color: var(--text-color-paleyellow);
+    font-weight: 600;
+    cursor: default;
+    transition: text-shadow 0.5s ease;
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+    -webkit-transition: text-shadow 0.5s ease;
+    -moz-transition: text-shadow 0.5s ease;
+    -ms-transition: text-shadow 0.5s ease;
+    -o-transition: text-shadow 0.5s ease;
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
     }
 }
 
@@ -176,7 +194,7 @@
     }
 
     a:hover {
-        color: var(--background-color-2)
+        color: #703271;
     }
 
     i {
@@ -228,11 +246,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(./media/az-logo-purple.png);
+        background-image: url(./media/human-rogue.png);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
         img {
+            visibility: hidden;
             filter: drop-shadow(0 0 0.75rem var(--text-color-paleyellow));
             -webkit-filter: drop-shadow(0 0 0.75rem var(--text-color-paleyellow));
         }
@@ -257,14 +279,30 @@
 
             a {
                 font-size: 1.2em;
-                font-weight: 550;
+                font-weight: 650;
+                box-shadow: 0 0 2rem black;
                 padding: 12px;
+                color: var(--text-color-paleyellow);
                 background-color: var(--background-color-6);
+                background-blend-mode: luminosity;
                 background-image: url(./media/cloudy-bg.png);
                 background-position: center;
                 background-size: cover;
                 border: thin solid var(--background-color-3);
                 border-radius: 8px;
+                transition: .5s ease;
+                -webkit-transition: .5s ease;
+                -moz-transition: .5s ease;
+                -ms-transition: .5s ease;
+                -o-transition: .5s ease;
+            }
+
+            a:hover {
+                background: black;
+                background-image: url(./media/cloudy-bg.png);
+                box-shadow: 0 0 1rem white;
+                color: #c918cc;
+                /* Letras blancas */
             }
         }
 
@@ -276,13 +314,14 @@
             i {
                 font-size: 65px;
                 color: var(--text-color-ghostwhite);
-                text-shadow: var(--text-color-paleyellow) 1px 0px 15px;
+                text-shadow: black 1px 0px 15px;
                 transition: all 0.3s ease;
             }
 
             i:hover {
                 scale: 1.2;
                 transform: scale(1.1);
+                text-shadow: var(--text-color-paleyellow) 1px 0px 15px;
             }
 
             .link-tr {
@@ -299,7 +338,7 @@
                 a {
                     font-weight: 500;
                     padding: 10px;
-                    color: var(--text-color-ghostwhite);
+                    color: var(--text-color-paleyellow);
                     text-shadow: var(--text-color-ghostwhite) 1px 0 10px;
                     transition: all 0.3s ease;
                 }
@@ -670,8 +709,13 @@
 
 footer {
     text-align: center;
-    background-color: #000000;
-    padding-top: 68px;
+    background-image: url(./media/sylvanas-bg-aboutus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    background-color: var(--background-color-6);
+    padding-top: 40px;
     padding-bottom: 40px;
 
     .footer-logo-adonis {
@@ -681,12 +725,6 @@ footer {
         justify-content: start;
         padding-top: 40px;
         padding-bottom: 40px;
-
-        background-image: url(./media/az-logo-purple.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-blend-mode: lighten;
 
         h2 {
             text-shadow: var(--text-color-ghostwhite) 1px 0 10px;

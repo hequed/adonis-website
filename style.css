@@ -57,6 +57,107 @@
     background: linear-gradient(180deg, rgba(24, 18, 43, 1) 0%, rgba(57, 48, 83, 1) 60%, rgba(68, 60, 104, 1) 100%);
 }
 
+.project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    padding: 12px;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--background-color-6);
+    background-blend-mode: luminosity;
+    
+    .logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 4rem;
+        color: var(--text-color-ghostwhite);
+        font-weight: 600;
+        cursor: default;
+        transition: text-shadow 0.5s ease;
+    
+        -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+        -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
+        animation: text-flicker 3s linear infinite;
+
+        .glowing-txt {
+            float: left;
+            margin-right: -0.8em;
+            -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+            0 0 0.45em var(--glow-color);
+            -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+            0 0 0.45em var(--glow-color);
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--text-color-paleyellow);
+            animation: text-flicker 3s linear infinite;
+          }
+
+          @keyframes text-flicker {
+            0% {
+              opacity: 0.1;
+            }
+          
+            2% {
+              opacity: 1;
+            }
+          
+            8% {
+              opacity: 0.1;
+            }
+          
+            9% {
+              opacity: 1;
+            }
+          
+            12% {
+              opacity: 0.1;
+            }
+            20% {
+              opacity: 1;
+            }
+            25% {
+              opacity: 0.3;
+            }
+            30% {
+              opacity: 1;
+            }
+          
+            70% {
+              opacity: 0.7;
+            }
+            72% {
+              opacity: 0.2;
+            }
+          
+            77% {
+              opacity: 0.9;
+            }
+            100% {
+              opacity: 0.9;
+            }
+          }
+
+        .faulty-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--text-color-ghostwhite);
+            font-weight: 600;
+            cursor: default;
+            transition: text-shadow 0.5s ease;
+            opacity: 0.5;
+            animation: faulty-flicker 2s linear infinite;
+        }
+  }
+    
+    .logo:hover {
+        text-shadow: 0 0 5px whitesmoke;
+    }
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -137,6 +238,7 @@
         }
 
         h1 {
+            display: none;
             font-family: "Mate SC", serif;
             font-size: 3em;
             font-weight: 900;
@@ -257,7 +359,8 @@
             width: 80%;
 
             i {
-                font-size: 70px;
+                font-size: 60px;
+                padding: 8px;
                 /*visibility: hidden;*/
             }
 

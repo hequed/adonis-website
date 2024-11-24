@@ -313,7 +313,6 @@ header {
                 background-blend-mode: luminosity;
                 box-shadow: 0 0 1rem var(--text-color-paleyellow);
                 color: var(--text-color-ghostwhite);
-                text-shadow: ;
                 /* Letras blancas */
             }
         }
@@ -490,7 +489,6 @@ header {
                 font-size: 2.6rem;
                 text-align: center;
                 padding-bottom: 20px;
-                text-shadow: ;
             }
 
             li,
